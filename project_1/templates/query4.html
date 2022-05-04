@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block title %}Querie 4{% endblock %}
+
+{% block content %}
+<h1 align="center">The users who are followed by both _ and _.</h1>
+{% for client in users %}
+    {% if client.comments|length == 0 %}
+        <h1>{{client.username}}</h1>
+    {% endif %}
+{% endfor %}
+
+{% endblock %}

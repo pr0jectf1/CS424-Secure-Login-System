@@ -1,0 +1,31 @@
+{% extends "base.html" %} {% block title %}Blogs{% endblock %}
+
+{% block content %}
+<h1>Hello </h1>
+<h1 align="center">Make a Post</h1>
+
+<form method="POST">
+    <div class="mb-3">
+        <label for="subject" class="form-label">Subject</label>
+        <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter a subject">
+    </div>
+    <div class="mb-3">
+        <label for="content" class="form-label">Content</label>
+        <textarea tpye="text" class="form-control" id="content" name="content" rows="3" placeholder=". . . "></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="tag" class="form-label">Tag (Separate tags with ',')</label>
+        <input type="text" class="form-control" id="tag" name="tag" placeholder="Enter a tag">
+    </div>
+    <br>
+    
+    <button type="submit" class="btn btn-primary">Post</button>
+
+    <!-- user enters tag and submits it to add into an array list -->
+    <!-- Once the entire form is submitted, that list of tags are added to the db -->
+    <!-- for every tag in db, create a pill badge -->
+    
+    
+</form>
+
+{% endblock %}

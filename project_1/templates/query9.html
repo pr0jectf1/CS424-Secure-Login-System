@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block title %}Querie 9{% endblock %}
+
+{% block content %}
+<h1 align="center">Users such that all the blogs they posted so far never received any negative comments.</h1>
+{% for client in users %}
+    {% if client.comments|length == 0 %}
+        <h1>{{client.username}}</h1>
+    {% endif %}
+{% endfor %}
+
+{% endblock %}

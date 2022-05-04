@@ -1,0 +1,64 @@
+{% extends "base.html" %} {% block title %}Queries{% endblock %}
+
+{% block content %}
+<h1>Hello </h1>
+<h1 align="center">Select a query!</h1>
+
+<form method="get" action="/query1">
+    <div class="mb-3">
+        <label for="tag_x" class="form-label">Tag X</label>
+        <input type="text" class="form-control" id="tag_x" name="tag_x" placeholder="Enter a tag">
+    </div>
+    <div class="mb-3">
+        <label for="tag_y" class="form-label">Tag Y</label>
+        <input type="text" class="form-control" id="tag_y" name="tag_y" placeholder="Enter a tag">
+    </div>
+    
+    
+    <button type="submit" class="btn btn-primary btn-lg">Query 1</button>      
+
+    <!-- user enters tag and submits it to add into an array list -->
+    <!-- Once the entire form is submitted, that list of tags are added to the db -->
+    <!-- for every tag in db, create a pill badge -->
+    
+    
+</form>
+
+<div align="center">
+    <span>
+        
+        
+    </span>
+    <span>
+        <a href="/query2"><button type="button" class="btn btn-primary btn-lg">Query 2</button></a>      
+    </span>
+    <span>
+        <a href="/query3"><button type="button" class="btn btn-primary btn-lg">Query 3</button></a>      
+    </span>
+</div>
+<br>
+<div align="center">
+    <span>
+        <a href="/query4"><button type="button" class="btn btn-primary btn-lg">Query 4</button></a>      
+    </span>
+    <span>
+        <a href="/query5"><button type="button" class="btn btn-primary btn-lg">Query 5</button></a>      
+    </span>
+    <span>
+        <a href="/query6"><button type="button" class="btn btn-primary btn-lg">Query 6</button></a>      
+    </span>
+</div>
+<br>
+<div align="center">
+    <span>
+        <a href="/query7"><button type="button" class="btn btn-primary btn-lg">Query 7</button></a>      
+    </span>
+    <span>
+        <a href="/query8"><button type="button" class="btn btn-primary btn-lg">Query 8</button></a>      
+    </span>
+    <span>
+        <a href="/query9"><button type="button" class="btn btn-primary btn-lg">Query 9</button></a>      
+    </span>
+</div>
+
+{% endblock %}

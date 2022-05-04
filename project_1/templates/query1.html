@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% block title %}Querie 1{% endblock %}
+
+{% block content %}
+<h1 align="center">These users posted at least 2 blogs, one has a tag of _, and another has a tag of _.</h1>
+{% for client in users %}
+    {% if client.posts|length > 1 %}
+        <h1>{{client.username}}</h1>
+        <h1>{{x}}</h1>
+    {% endif %}
+{% endfor %}
+
+{% endblock %}

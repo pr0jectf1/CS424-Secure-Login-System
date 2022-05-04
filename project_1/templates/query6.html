@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block title %}Querie 6{% endblock %}
+
+{% block content %}
+<h1 align="center">These users never posted a blog.</h1>
+{% for client in users %}
+    {% if client.posts|length == 0 %}
+        <h1>{{client.username}}</h1>
+    {% endif %}
+{% endfor %}
+
+{% endblock %}
